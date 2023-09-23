@@ -114,7 +114,7 @@ app.post("/svr/emps",function(req,res,next){
 });
 app.put("/svr/edit/:empcode",function(req,res,next){
     console.log("Inside put of user");
-    let empcode=req.params.empcode;
+    let empcode=+req.params.empcode;
     let department=req.body.department;
     let designation=req.body.designation;
     let salary=req.body.salary;
